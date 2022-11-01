@@ -1,0 +1,98 @@
+/* =======******====== Play game Part ======******====== */
+
+#play_game_part {
+    padding: 80px 0;
+    background: #0b001b;
+
+
+
+    .container {
+        .play_hade {
+            h3 {
+                color: #fff;
+                font-size: 30px;
+                font-weight: 900;
+                font-family: 'Nunito Sans', sans-serif;
+                text-shadow: 0 0 10px #cf1aac,
+                    0 0 20px #cf1aac,
+                    0 0 40px #cf1aac,
+                    0 0 80px #cf1aac,
+                    0 0 120px #cf1aac;
+            }
+        }
+
+
+        .play_game_img {
+            overflow: hidden;
+            margin: 0 auto;
+            transition: all linear .3s;
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-top: 60px;
+
+            &:hover {
+                transform: scale(1.1);
+
+                .overley {
+                    bottom: 0;
+                    height: 100%;
+                }
+            }
+
+            position: relative;
+
+            .overley {
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                right: 0;
+                background-color: rgba(11, 0, 27, 0.9);
+                overflow: hidden;
+                width: 100%;
+                height: 0;
+                transition: .5s ease;
+
+                .over_text {
+                    margin-top: 30%;
+
+                    h4 {
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 900;
+                        font-family: 'Nunito Sans', sans-serif;
+                        margin-top: 10px;
+                        text-shadow: 0 0 10px #cf1aac,
+                            0 0 20px #cf1aac,
+                            0 0 40px #cf1aac,
+                            0 0 80px #cf1aac,
+                            0 0 120px #cf1aac;
+                    }
+
+                    a {
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 600;
+                        font-family: 'Nunito Sans', sans-serif;
+                        padding: 8px 15px;
+                        background: #cf1aac;
+                        transition: 0.2s;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        text-decoration: none;
+                        margin-top: 50px;
+
+                        &:hover {
+                            background: #fcb100;
+                            color: #150035;
+                            box-shadow: 0 0 10px #fcb100, 0 0 40px #fcb100, 0 0 80px #fcb100;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* =======******====== Play game Part ======******====== */

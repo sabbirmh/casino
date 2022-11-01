@@ -1,0 +1,912 @@
+/* =======******====== Common css start ======******====== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* =======******====== Common css End ======******====== */
+/* =======******====== Header Part ======******====== */
+#header_all .main_overley {
+  position: relative;
+  z-index: 1;
+}
+
+#header_all .main_overley::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#header_all .banner_item {
+  padding: 30px 0;
+}
+
+#header_all .banner_item::after {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#header_all .container .logo {
+  width: 100px;
+}
+
+#header_all .container .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header_all .container .menu ul li {
+  margin: 20px;
+}
+
+#header_all .container .menu ul li a {
+  color: #cf1aac;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#header_all .container .menu ul li a:hover {
+  color: #944bff;
+}
+
+#header_all .container .menu ul .current a {
+  color: #944bff;
+}
+
+#header_all .container .login {
+  margin: 17px;
+}
+
+#header_all .container .login a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 8px 15px;
+  background: #cf1aac;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 5px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+#header_all .container .login a:hover {
+  background: #944bff;
+  color: #150035;
+  -webkit-box-shadow: 0 0 10px #944bff, 0 0 40px #944bff, 0 0 80px #944bff;
+          box-shadow: 0 0 10px #944bff, 0 0 40px #944bff, 0 0 80px #944bff;
+}
+
+#header_all .container .sec_row {
+  margin-top: 20px;
+}
+
+#header_all .container .sec_row .header_middle_text {
+  margin-top: 100px;
+}
+
+#header_all .container .sec_row .header_middle_text h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#header_all .container .sec_row .header_middle_text .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 60px;
+}
+
+#header_all .container .sec_row .header_middle_text .data h2 {
+  color: rgba(11, 0, 27, 0.3);
+  font-size: 48px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  position: relative;
+}
+
+#header_all .container .sec_row .header_middle_text .data h2::before {
+  position: absolute;
+  content: attr(data-text);
+  color: #fcb100;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #fcb100;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+  -webkit-filter: drop-shadow(0 0 20px #fcb100) drop-shadow(0 0 50px #fcb100);
+          filter: drop-shadow(0 0 20px #fcb100) drop-shadow(0 0 50px #fcb100);
+}
+
+@-webkit-keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+#header_all .container .sec_row .header_middle_text p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 60px;
+}
+
+#header_all .container .sec_row .header_middle_text a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 8px 15px;
+  background: #cf1aac;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 5px;
+  overflow: hidden;
+  text-decoration: none;
+  margin-top: 70px;
+}
+
+#header_all .container .sec_row .header_middle_text a:hover {
+  background: #fcb100;
+  color: #150035;
+  -webkit-box-shadow: 0 0 10px #fcb100, 0 0 40px #fcb100, 0 0 80px #fcb100;
+          box-shadow: 0 0 10px #fcb100, 0 0 40px #fcb100, 0 0 80px #fcb100;
+}
+
+/* =======******====== Header Part ======******====== */
+/* =======******====== Header Part ======******====== */
+#about_part {
+  padding: 50px 0;
+  background: #0b001b;
+}
+
+#about_part .container .about_head h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  text-shadow: 0 0 10px #cf1aac, 0 0 20px #cf1aac, 0 0 40px #cf1aac, 0 0 80px #cf1aac, 0 0 120px #cf1aac;
+}
+
+#about_part .container .about_image {
+  margin-top: 40px;
+  width: 400px;
+}
+
+#about_part .container .about_text {
+  margin-top: 150px;
+}
+
+#about_part .container .about_text p {
+  color: #f1f1f1;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#about_part .container .about_short_img {
+  width: 150px;
+}
+
+#about_part .container .about_short_sec_img {
+  width: 70px;
+  margin-top: -90px;
+  margin-left: 25px;
+}
+
+/* =======******====== Header Part ======******====== */
+/* =======******====== Play game Part ======******====== */
+#play_game_part {
+  padding: 80px 0;
+  background: #0b001b;
+}
+
+#play_game_part .container .play_hade h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  text-shadow: 0 0 10px #cf1aac, 0 0 20px #cf1aac, 0 0 40px #cf1aac, 0 0 80px #cf1aac, 0 0 120px #cf1aac;
+}
+
+#play_game_part .container .play_game_img {
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  position: relative;
+}
+
+#play_game_part .container .play_game_img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#play_game_part .container .play_game_img:hover .overley {
+  bottom: 0;
+  height: 100%;
+}
+
+#play_game_part .container .play_game_img .overley {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(11, 0, 27, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+#play_game_part .container .play_game_img .overley .over_text {
+  margin-top: 30%;
+}
+
+#play_game_part .container .play_game_img .overley .over_text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 10px;
+  text-shadow: 0 0 10px #cf1aac, 0 0 20px #cf1aac, 0 0 40px #cf1aac, 0 0 80px #cf1aac, 0 0 120px #cf1aac;
+}
+
+#play_game_part .container .play_game_img .overley .over_text a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 8px 15px;
+  background: #cf1aac;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 5px;
+  overflow: hidden;
+  text-decoration: none;
+  margin-top: 50px;
+}
+
+#play_game_part .container .play_game_img .overley .over_text a:hover {
+  background: #fcb100;
+  color: #150035;
+  -webkit-box-shadow: 0 0 10px #fcb100, 0 0 40px #fcb100, 0 0 80px #fcb100;
+          box-shadow: 0 0 10px #fcb100, 0 0 40px #fcb100, 0 0 80px #fcb100;
+}
+
+/* =======******====== Play game Part ======******====== */
+/* =======******====== Win game Part ======******====== */
+#win_part .main_overley {
+  position: relative;
+  z-index: 1;
+}
+
+#win_part .main_overley::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#win_part .win_item {
+  padding: 60px 0;
+}
+
+#win_part .win_item::after {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#win_part .win_item .container .win_left_part h4 {
+  color: #fcb100;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#win_part .win_item .container .win_left_part ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+#win_part .win_item .container .win_left_part ul li {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-left: 6px;
+  padding: 5px 6px;
+  background: #fcb100;
+  border-radius: 5px;
+  text-shadow: 2px 2px 2px #080215;
+}
+
+#win_part .win_item .container .win_left_part p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 20px;
+  margin-top: 30px;
+}
+
+#win_part .win_item .container .win_middle_part h4 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#win_part .win_item .container .win_middle_part h4 span {
+  display: block;
+  color: #fcb100;
+  text-shadow: 0 0 10px #cf1aac, 0 0 20px #cf1aac, 0 0 40px #cf1aac, 0 0 80px #cf1aac, 0 0 120px #cf1aac;
+}
+
+#win_part .win_item .container .win_middle_part .img {
+  width: 200px;
+  margin-left: 20%;
+  margin-top: 15px;
+}
+
+#win_part .win_item .container .win_right_part h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+}
+
+#win_part .win_item .container .win_right_part h4::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -15px;
+  width: 100%;
+  height: 2px;
+  background: #5e13cc;
+}
+
+#win_part .win_item .container .win_right_part .row {
+  margin-top: 30px;
+}
+
+#win_part .win_item .container .win_right_part .next_row {
+  margin-top: 10px;
+}
+
+#win_part .win_item .container .win_right_part .winner_info h5 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 5px;
+}
+
+#win_part .win_item .container .win_right_part .winner_country_img {
+  width: 30px;
+}
+
+#win_part .win_item .container .win_right_part .winner_country_img img {
+  border-radius: 50px;
+}
+
+#win_part .win_item .container .win_right_part .winner_amount h5 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 5px;
+}
+
+/* =======******====== Win game Part ======******====== */
+/* =======******====== FAQ Part ======******====== */
+#faq_part {
+  padding: 30px 0;
+  background: #0b001b;
+}
+
+#faq_part .container .head {
+  margin-top: 20px;
+}
+
+#faq_part .container .head h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  text-shadow: 0 0 10px #cf1aac, 0 0 20px #cf1aac, 0 0 40px #cf1aac, 0 0 80px #cf1aac, 0 0 120px #cf1aac;
+}
+
+#faq_part .container .faq_question {
+  margin-top: 35px;
+  padding: 20px 0;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 0px 17px -2px #fcb100;
+  box-shadow: 0px 0px 17px -2px #fcb100;
+}
+
+#faq_part .container .faq_question h5 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 140px #fff;
+}
+
+#faq_part .container .faq_question p {
+  color: #fcb100;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 20px;
+  margin-top: 12px;
+}
+
+#faq_part .container .upcoming h6 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 30px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 140px #fff;
+}
+
+#faq_part .container .upcoming .tournament_img {
+  margin-top: 30px;
+}
+
+#faq_part .container .upcoming .tournament_img .text h4 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 10px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 140px #fff;
+}
+
+#faq_part .container .upcoming .tournament_img .text h5 {
+  color: #fcb100;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 10px;
+}
+
+#faq_part .container .upcoming .tournament_img .text a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 8px 15px;
+  background: #cf1aac;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 5px;
+  overflow: hidden;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+#faq_part .container .upcoming .tournament_img .text a:hover {
+  background: #fcb100;
+  color: #150035;
+  -webkit-box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+          box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+
+#faq_part .container .count {
+  margin: 20px;
+}
+
+#faq_part .container .count h3 {
+  color: #fcb100;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#faq_part .container .count #day, #faq_part .container .count #hour, #faq_part .container .count #minute, #faq_part .container .count #second {
+  width: 30px;
+  height: 30px;
+  background: #fcb100;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+          box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+  float: left;
+  margin: 10px;
+}
+
+/* =======******====== FAQ Part ======******====== */
+/* =======******====== top game Part ======******====== */
+#topgame_part {
+  padding: 50px 0;
+  background: #0b001b;
+}
+
+#topgame_part .container .head h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  text-shadow: 0 0 10px #cf1aac, 0 0 20px #cf1aac, 0 0 40px #cf1aac, 0 0 80px #cf1aac, 0 0 120px #cf1aac;
+}
+
+#topgame_part .container .top_part {
+  padding: 20px 0;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 0px 17px -2px #fcb100;
+  box-shadow: 0px 0px 17px -2px #fcb100;
+  margin-top: 60px;
+}
+
+#topgame_part .container .top_part .top_image {
+  width: 120px;
+  margin-left: 33%;
+}
+
+#topgame_part .container .top_part .game_name h4 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 30px;
+  text-shadow: 0 0 10px #cf1aac, 0 0 20px #cf1aac, 0 0 40px #cf1aac, 0 0 80px #cf1aac, 0 0 140px #cf1aac;
+}
+
+#topgame_part .container .top_part .game_invest h4 {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 30px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 140px #fff;
+}
+
+#topgame_part .container .top_part .game_price h4 {
+  color: #fcb100;
+  font-size: 21px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 45px;
+}
+
+#topgame_part .container .top_part .play a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 8px 15px;
+  background: #cf1aac;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 5px;
+  overflow: hidden;
+  text-decoration: none;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+#topgame_part .container .top_part .play a:hover {
+  background: #fcb100;
+  color: #150035;
+  -webkit-box-shadow: 0 0 10px #fcb100, 0 0 40px #fcb100, 0 0 80px #fcb100;
+          box-shadow: 0 0 10px #fcb100, 0 0 40px #fcb100, 0 0 80px #fcb100;
+}
+
+#topgame_part .container .top_fix {
+  padding: 20px 0 1px;
+}
+
+#topgame_part .container .top_fix .play a {
+  margin-top: 40px;
+  margin-bottom: 34px;
+}
+
+#topgame_part .container .top_fix_it {
+  padding: 13px 0 1px;
+}
+
+#topgame_part .container .top_fix_it .play a {
+  margin-top: 40px;
+  margin-bottom: 34px;
+}
+
+/* =======******====== top game Part ======******====== */
+/* =======******====== UNLOCK Part ======******====== */
+#unlock_part .main_overley {
+  position: relative;
+  z-index: 1;
+}
+
+#unlock_part .main_overley::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#unlock_part .unlock_item {
+  padding: 30px 0;
+}
+
+#unlock_part .unlock_item::after {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#unlock_part .unlock_item .unlock_image {
+  margin-top: 30px;
+}
+
+#unlock_part .unlock_item .unlock_text {
+  margin-top: 40px;
+}
+
+#unlock_part .unlock_item .unlock_text h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  text-shadow: 0 0 10px #cf1aac, 0 0 20px #cf1aac, 0 0 40px #cf1aac, 0 0 80px #cf1aac, 0 0 120px #cf1aac;
+}
+
+#unlock_part .unlock_item .unlock_text p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 50px;
+  line-height: 20px;
+}
+
+#unlock_part .unlock_item .unlock_text a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 8px 15px;
+  background: #cf1aac;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 5px;
+  overflow: hidden;
+  text-decoration: none;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+#unlock_part .unlock_item .unlock_text a:hover {
+  background: #fcb100;
+  color: #150035;
+  -webkit-box-shadow: 0 0 10px #fcb100, 0 0 40px #fcb100, 0 0 80px #fcb100;
+          box-shadow: 0 0 10px #fcb100, 0 0 40px #fcb100, 0 0 80px #fcb100;
+}
+
+/* =======******====== UNLOCK Part ======******====== */
+/* =======******====== Footer Part ======******====== */
+#footer .main_overley {
+  position: relative;
+  z-index: 1;
+}
+
+#footer .main_overley::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#footer .footer_item {
+  padding: 80px 0 30px;
+}
+
+#footer .footer_item::after {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#footer .footer_item .container .footer_left_log {
+  width: 100px;
+}
+
+#footer .footer_item .container .footer_left_text p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 20px;
+}
+
+#footer .footer_item .container .social_icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .footer_item .container .social_icon ul li {
+  margin: 10px;
+}
+
+#footer .footer_item .container .social_icon ul li a {
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 140px #fff;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#footer .footer_item .container .social_icon ul li a:hover {
+  color: #fcb100;
+  text-shadow: 0 0 10px #fcb100, 0 0 40px #fcb100, 0 0 80px #fcb100;
+}
+
+#footer .footer_item .container .payment h4 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 10px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 140px #fff;
+}
+
+#footer .footer_item .container .payment .method_img {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#footer .footer_item .container .subscribe h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 10px;
+  text-shadow: 0 0 10px #fcb100, 0 0 20px #fcb100, 0 0 40px #fcb100, 0 0 80px #fcb100, 0 0 140px #fcb100;
+}
+
+#footer .footer_item .container .subscribe .search_ber {
+  display: inline-block;
+  position: relative;
+  margin-top: 6px;
+}
+
+#footer .footer_item .container .subscribe .search_ber input {
+  width: 220px;
+  height: 36px;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+#footer .footer_item .container .subscribe .search_ber button {
+  position: absolute;
+  background: transparent;
+  border: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 15px;
+  font-size: 12px;
+  color: #fcb100;
+}
+
+#footer .footer_item .container .security h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 10px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 140px #fff;
+}
+
+#footer .footer_item .container .security .footer_last {
+  margin-top: 30px;
+}
+
+#footer .footer_item .container .security .footer_last p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 10px;
+  text-shadow: 0 0 10px #fcb100, 0 0 20px #fcb100, 0 0 40px #fcb100, 0 0 80px #fcb100, 0 0 140px #fcb100;
+}
+
+#footer .footer_item .container .security .footer_last .last {
+  margin-top: -14px;
+}
+
+#footer .last_info {
+  padding: 20px 0;
+  background: #0b001b;
+}
+
+#footer .last_info h4 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-top: 10px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 140px #fff;
+}
+
+/* =======******====== Footer Part ======******====== */
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+/* =======******====== Header Part ======******====== */
+
+#about_part {
+    padding: 50px 0;
+    background: #0b001b;
+
+    .container {
+        .about_head {
+            h3 {
+                color: #fff;
+                font-size: 30px;
+                font-weight: 900;
+                font-family: 'Nunito Sans', sans-serif;
+                text-shadow: 0 0 10px #cf1aac,
+                    0 0 20px #cf1aac,
+                    0 0 40px #cf1aac,
+                    0 0 80px #cf1aac,
+                    0 0 120px #cf1aac;
+            }
+        }
+
+        .about_image{
+            margin-top: 40px;
+            width: 400px;
+        }
+
+        .about_text{
+            margin-top: 150px;
+            p{
+                color: #f1f1f1;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 20px;
+                font-family: 'Nunito Sans', sans-serif;
+            }
+        }
+
+        .about_short_img{
+            width: 150px;
+        }
+
+        .about_short_sec_img{
+            width: 70px;
+            margin-top: -90px;
+            margin-left: 25px;
+        }
+    }
+}
+
+
+/* =======******====== Header Part ======******====== */
